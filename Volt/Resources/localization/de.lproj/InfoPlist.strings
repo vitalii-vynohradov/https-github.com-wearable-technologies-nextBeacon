@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  Volt
+
+  Created by Vitalii Vynohradov on 25.01.2022.
+  
+*/
+
+/* Bluetooth permission */
+NSBluetoothAlwaysUsageDescription               = "Zugriff auf Bluetooth gewähren, um Volt-Geräte zu verwenden.";
+NSBluetoothPeripheralUsageDescription           = "Zugriff auf Bluetooth gewähren, um Volt-Geräte zu verwenden.";
+
+/* Camera permission */
+NSCameraUsageDescription                        = "Gewähren Sie Zugriff auf die Kamera, um den QR-Reader zu verwenden.";

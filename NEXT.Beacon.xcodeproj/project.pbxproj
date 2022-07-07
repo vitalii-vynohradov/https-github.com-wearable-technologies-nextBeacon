@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8456161D2693333900493831 /* PPEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456161C2693333900493831 /* PPEViewModel.swift */; };
+		845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */; };
+		846FEF61269309BA003F18EA /* PPEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FEF60269309BA003F18EA /* PPEView.swift */; };
+		84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBB3DD26715E1F005448E4 /* View+Volt.swift */; };
+		B793167E26A08D49001D716E /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = B793167D26A08D49001D716E /* Atomics */; };
+		C1038FBE2668CF8A00BA19D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */; };
+		C1038FC12668CFA600BA19D7 /* VoltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FBF2668CFA600BA19D7 /* VoltApp.swift */; };
+		C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FC32668CFC700BA19D7 /* PersistenceController.swift */; };
+		C1038FD32668EB6500BA19D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C1038FD22668EB6500BA19D7 /* Alamofire */; };
+		C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FE22668FE1900BA19D7 /* String+Volt.swift */; };
+		C1038FF02669049B00BA19D7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FEF2669049B00BA19D7 /* Logger.swift */; };
+		C1038FF92669096200BA19D7 /* Optional+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FF82669096200BA19D7 /* Optional+Volt.swift */; };
+		C1038FFE26690B6F00BA19D7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C1038FFD26690B6F00BA19D7 /* KeychainAccess */; };
+		C10390082669208200BA19D7 /* JSONDecoder+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10390072669208200BA19D7 /* JSONDecoder+Volt.swift */; };
+		C10C608C2876EDC700D24BD2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608B2876EDC700D24BD2 /* HeaderView.swift */; };
+		C10C608E2876EDF700D24BD2 /* LoadButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */; };
+		C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */; };
+		C10C60922876EE6A00D24BD2 /* SmallButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */; };
+		C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60932876F00D00D24BD2 /* AlertView.swift */; };
+		C10C609C2876F3CD00D24BD2 /* LocalDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C10C609A2876F3CD00D24BD2 /* LocalDB.xcdatamodeld */; };
+		C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */; };
+		C10C60A1287722AC00D24BD2 /* CompleteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A0287722AC00D24BD2 /* CompleteListView.swift */; };
+		C10C60A3287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */; };
+		C10C60A52877261C00D24BD2 /* CompleteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */; };
+		C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11873B7279054840068B4B0 /* MulticastDelegate.swift */; };
+		C11873BA2790669E0068B4B0 /* CLProximity+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11873B92790669E0068B4B0 /* CLProximity+Volt.swift */; };
+		C11875A02670B2E700CE1EDD /* QrReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C118759F2670B2E700CE1EDD /* QrReaderService.swift */; };
+		C11875A22670B75F00CE1EDD /* QrReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */; };
+		C11875A42670BA0900CE1EDD /* QrReaderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */; };
+		C11875A62670BC8400CE1EDD /* QrReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A52670BC8400CE1EDD /* QrReaderView.swift */; };
+		C12E5B52269CB9F100FD991C /* Array+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E5B51269CB9F100FD991C /* Array+Volt.swift */; };
+		C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */; };
+		C1AE6FFF279FFAAC006C46C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE7001279FFAAC006C46C6 /* InfoPlist.strings */; };
+		C1B603022673978400D5414A /* EquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B603012673978400D5414A /* EquipmentRepository.swift */; };
+		C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D70416266A0DAB007CD802 /* RepositoryError.swift */; };
+		C1D7041F266A3B2A007CD802 /* DbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7041E266A3B2A007CD802 /* DbError.swift */; };
+		C1D70425266A467F007CD802 /* EnvironmentValues+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D70424266A467F007CD802 /* EnvironmentValues+Volt.swift */; };
+		C1D9FFC4267CBA6700FD2C2C /* BleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9FFC3267CBA6700FD2C2C /* BleStatus.swift */; };
+		C1E4C04D266E61AD0024D1FD /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4C04C266E61AD0024D1FD /* BleManager.swift */; };
+		C1E4C04F266E62F30024D1FD /* BleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4C04E266E62F30024D1FD /* BleError.swift */; };
+		C1E4C051266E641C0024D1FD /* BleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4C050266E641C0024D1FD /* BleDevice.swift */; };
+		C1E4C053266E67F90024D1FD /* BleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4C052266E67F90024D1FD /* BleUtil.swift */; };
+		C1E4C055266E6B360024D1FD /* CBUUID+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4C054266E6B360024D1FD /* CBUUID+Volt.swift */; };
+		C1E4C056266E8BA00024D1FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1E4C058266E8BA00024D1FD /* Localizable.strings */; };
+		C1E8B5D027A2D90100FA6B20 /* Encodable+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8B5CF27A2D90100FA6B20 /* Encodable+Volt.swift */; };
+		C1E8B5D927A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8B5D827A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift */; };
+		C1EF0368267205D500980ACB /* EquipmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF0367267205D500980ACB /* EquipmentType.swift */; };
+		C1EF036C26720B3B00980ACB /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF036B26720B3B00980ACB /* Equipment.swift */; };
+		C1EF037F2672178600980ACB /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF037E2672178600980ACB /* BaseApiService.swift */; };
+		C1EF038126722A8600980ACB /* BaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF038026722A8600980ACB /* BaseDataService.swift */; };
+		C1EF038326723B8400980ACB /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF038226723B8400980ACB /* BaseRepository.swift */; };
+		C1EF03872672595E00980ACB /* EntityFetchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF03862672595E00980ACB /* EntityFetchProtocol.swift */; };
+		C1EF038A2672604300980ACB /* EquipmentTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF03892672604300980ACB /* EquipmentTypeRepository.swift */; };
+		C1F286962677B47E00118374 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = C1F286952677B47E00118374 /* SwiftUIRefresh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8456161C2693333900493831 /* PPEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEViewModel.swift; sourceTree = "<group>"; };
+		845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		846FEF60269309BA003F18EA /* PPEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEView.swift; sourceTree = "<group>"; };
+		84EBB3DD26715E1F005448E4 /* View+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Volt.swift"; sourceTree = "<group>"; };
+		C1038FA02668CCA000BA19D7 /* NEXT.Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEXT.Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1038FBF2668CFA600BA19D7 /* VoltApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltApp.swift; sourceTree = "<group>"; };
+		C1038FC02668CFA600BA19D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1038FC32668CFC700BA19D7 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C1038FE22668FE1900BA19D7 /* String+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Volt.swift"; sourceTree = "<group>"; };
+		C1038FEF2669049B00BA19D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		C1038FF82669096200BA19D7 /* Optional+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Volt.swift"; sourceTree = "<group>"; };
+		C10390072669208200BA19D7 /* JSONDecoder+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Volt.swift"; sourceTree = "<group>"; };
+		C10C608B2876EDC700D24BD2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadButtonViewModifier.swift; sourceTree = "<group>"; };
+		C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTextViewModifier.swift; sourceTree = "<group>"; };
+		C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButtonViewModifier.swift; sourceTree = "<group>"; };
+		C10C60932876F00D00D24BD2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		C10C609B2876F3CD00D24BD2 /* LocalDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDB.xcdatamodel; sourceTree = "<group>"; };
+		C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledButtonStyle.swift; sourceTree = "<group>"; };
+		C10C60A0287722AC00D24BD2 /* CompleteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListView.swift; sourceTree = "<group>"; };
+		C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationLinkViewModifier.swift; sourceTree = "<group>"; };
+		C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListViewModel.swift; sourceTree = "<group>"; };
+		C11873B7279054840068B4B0 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		C11873B92790669E0068B4B0 /* CLProximity+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLProximity+Volt.swift"; sourceTree = "<group>"; };
+		C118759F2670B2E700CE1EDD /* QrReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderService.swift; sourceTree = "<group>"; };
+		C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewModel.swift; sourceTree = "<group>"; };
+		C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderPreview.swift; sourceTree = "<group>"; };
+		C11875A52670BC8400CE1EDD /* QrReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderView.swift; sourceTree = "<group>"; };
+		C12E5B51269CB9F100FD991C /* Array+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Volt.swift"; sourceTree = "<group>"; };
+		C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Volt.swift"; sourceTree = "<group>"; };
+		C1AE7000279FFAAC006C46C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1AE7002279FFAAF006C46C6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1B603012673978400D5414A /* EquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentRepository.swift; sourceTree = "<group>"; };
+		C1D70416266A0DAB007CD802 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		C1D7041E266A3B2A007CD802 /* DbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbError.swift; sourceTree = "<group>"; };
+		C1D70424266A467F007CD802 /* EnvironmentValues+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Volt.swift"; sourceTree = "<group>"; };
+		C1D9FFC3267CBA6700FD2C2C /* BleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleStatus.swift; sourceTree = "<group>"; };
+		C1E4C04C266E61AD0024D1FD /* BleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
+		C1E4C04E266E62F30024D1FD /* BleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleError.swift; sourceTree = "<group>"; };
+		C1E4C050266E641C0024D1FD /* BleDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDevice.swift; sourceTree = "<group>"; };
+		C1E4C052266E67F90024D1FD /* BleUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleUtil.swift; sourceTree = "<group>"; };
+		C1E4C054266E6B360024D1FD /* CBUUID+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CBUUID+Volt.swift"; sourceTree = "<group>"; };
+		C1E4C057266E8BA00024D1FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1E8B5CF27A2D90100FA6B20 /* Encodable+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Volt.swift"; sourceTree = "<group>"; };
+		C1E8B5D827A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Volt.swift"; sourceTree = "<group>"; };
+		C1ED0B6A268F175E000FD642 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1EF0367267205D500980ACB /* EquipmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentType.swift; sourceTree = "<group>"; };
+		C1EF036B26720B3B00980ACB /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		C1EF037E2672178600980ACB /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		C1EF038026722A8600980ACB /* BaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataService.swift; sourceTree = "<group>"; };
+		C1EF038226723B8400980ACB /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		C1EF03862672595E00980ACB /* EntityFetchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFetchProtocol.swift; sourceTree = "<group>"; };
+		C1EF03892672604300980ACB /* EquipmentTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTypeRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1038F9D2668CCA000BA19D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1038FD32668EB6500BA19D7 /* Alamofire in Frameworks */,
+				B793167E26A08D49001D716E /* Atomics in Frameworks */,
+				C1038FFE26690B6F00BA19D7 /* KeychainAccess in Frameworks */,
+				C1F286962677B47E00118374 /* SwiftUIRefresh in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8454A538269762C700323613 /* ppe */ = {
+			isa = PBXGroup;
+			children = (
+				846FEF60269309BA003F18EA /* PPEView.swift */,
+				8456161C2693333900493831 /* PPEViewModel.swift */,
+				845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */,
+			);
+			path = ppe;
+			sourceTree = "<group>";
+		};
+		84EBB3DC26715DCF005448E4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C1038F972668CCA000BA19D7 = {
+			isa = PBXGroup;
+			children = (
+				C1038FA12668CCA000BA19D7 /* Products */,
+				84EBB3DC26715DCF005448E4 /* Recovered References */,
+				C1038FA22668CCA000BA19D7 /* Volt */,
+			);
+			sourceTree = "<group>";
+		};
+		C1038FA12668CCA000BA19D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FA02668CCA000BA19D7 /* NEXT.Beacon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1038FA22668CCA000BA19D7 /* Volt */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FB82668CDF000BA19D7 /* Resources */,
+				C1038FB72668CDE500BA19D7 /* Sources */,
+			);
+			path = Volt;
+			sourceTree = "<group>";
+		};
+		C1038FB72668CDE500BA19D7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FCA2668D00C00BA19D7 /* app */,
+				C1038FBC2668CE9700BA19D7 /* ble */,
+				C1038FB92668CE6F00BA19D7 /* common */,
+				C10390012669162E00BA19D7 /* data */,
+				C1038FBB2668CE9000BA19D7 /* ui */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C1038FB82668CDF000BA19D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FDE2668FD6400BA19D7 /* localization */,
+				C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1038FB92668CE6F00BA19D7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FE12668FDF000BA19D7 /* extension */,
+				C1038FEE2669048900BA19D7 /* util */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C1038FBA2668CE7E00BA19D7 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				C1EF03862672595E00980ACB /* EntityFetchProtocol.swift */,
+				C1038FC32668CFC700BA19D7 /* PersistenceController.swift */,
+				C10C609A2876F3CD00D24BD2 /* LocalDB.xcdatamodeld */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		C1038FBB2668CE9000BA19D7 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				C10C609F2877228800D24BD2 /* list */,
+				C148B096266FA8D3004139BD /* qr */,
+				8454A538269762C700323613 /* ppe */,
+				C10C608A2876ED9900D24BD2 /* common */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		C1038FBC2668CE9700BA19D7 /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				C1E4C050266E641C0024D1FD /* BleDevice.swift */,
+				C1E4C04E266E62F30024D1FD /* BleError.swift */,
+				C1E4C04C266E61AD0024D1FD /* BleManager.swift */,
+				C1D9FFC3267CBA6700FD2C2C /* BleStatus.swift */,
+				C1E4C052266E67F90024D1FD /* BleUtil.swift */,
+			);
+			path = ble;
+			sourceTree = "<group>";
+		};
+		C1038FCA2668D00C00BA19D7 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FC02668CFA600BA19D7 /* Info.plist */,
+				C1038FBF2668CFA600BA19D7 /* VoltApp.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		C1038FCC2668D2B100BA19D7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C1EF036B26720B3B00980ACB /* Equipment.swift */,
+				C1EF0367267205D500980ACB /* EquipmentType.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C1038FDE2668FD6400BA19D7 /* localization */ = {
+			isa = PBXGroup;
+			children = (
+				C1AE7001279FFAAC006C46C6 /* InfoPlist.strings */,
+				C1E4C058266E8BA00024D1FD /* Localizable.strings */,
+			);
+			path = localization;
+			sourceTree = "<group>";
+		};
+		C1038FE12668FDF000BA19D7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C12E5B51269CB9F100FD991C /* Array+Volt.swift */,
+				C1E4C054266E6B360024D1FD /* CBUUID+Volt.swift */,
+				C11873B92790669E0068B4B0 /* CLProximity+Volt.swift */,
+				C1E8B5CF27A2D90100FA6B20 /* Encodable+Volt.swift */,
+				C1D70424266A467F007CD802 /* EnvironmentValues+Volt.swift */,
+				C10390072669208200BA19D7 /* JSONDecoder+Volt.swift */,
+				C1E8B5D827A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift */,
+				C1038FF82669096200BA19D7 /* Optional+Volt.swift */,
+				C1038FE22668FE1900BA19D7 /* String+Volt.swift */,
+				C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */,
+				84EBB3DD26715E1F005448E4 /* View+Volt.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		C1038FEE2669048900BA19D7 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FEF2669049B00BA19D7 /* Logger.swift */,
+				C11873B7279054840068B4B0 /* MulticastDelegate.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		C10390012669162E00BA19D7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C1038FBA2668CE7E00BA19D7 /* db */,
+				C1D7041D266A3B0B007CD802 /* enums */,
+				C1038FCC2668D2B100BA19D7 /* model */,
+				C10390022669165900BA19D7 /* repo */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		C10390022669165900BA19D7 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				C1EF038826725DDE00980ACB /* base */,
+				C1B603012673978400D5414A /* EquipmentRepository.swift */,
+				C1EF03892672604300980ACB /* EquipmentTypeRepository.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		C10C608A2876ED9900D24BD2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C10C608B2876EDC700D24BD2 /* HeaderView.swift */,
+				C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */,
+				C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */,
+				C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */,
+				C10C60932876F00D00D24BD2 /* AlertView.swift */,
+				C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */,
+				C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C10C609F2877228800D24BD2 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				C10C60A0287722AC00D24BD2 /* CompleteListView.swift */,
+				C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		C138F5712671118F0039C911 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C138F572267111950039C911 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C138F573267111A70039C911 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				C118759F2670B2E700CE1EDD /* QrReaderService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		C148B096266FA8D3004139BD /* qr */ = {
+			isa = PBXGroup;
+			children = (
+				C138F573267111A70039C911 /* service */,
+				C138F572267111950039C911 /* viewmodel */,
+				C138F5712671118F0039C911 /* views */,
+				C11875A52670BC8400CE1EDD /* QrReaderView.swift */,
+			);
+			path = qr;
+			sourceTree = "<group>";
+		};
+		C1D7041D266A3B0B007CD802 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				C1D7041E266A3B2A007CD802 /* DbError.swift */,
+				C1D70416266A0DAB007CD802 /* RepositoryError.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		C1EF038826725DDE00980ACB /* base */ = {
+			isa = PBXGroup;
+			children = (
+				C1EF037E2672178600980ACB /* BaseApiService.swift */,
+				C1EF038026722A8600980ACB /* BaseDataService.swift */,
+				C1EF038226723B8400980ACB /* BaseRepository.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1038F9F2668CCA000BA19D7 /* NEXT.Beacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1038FB42668CCA100BA19D7 /* Build configuration list for PBXNativeTarget "NEXT.Beacon" */;
+			buildPhases = (
+				C1038F9C2668CCA000BA19D7 /* Sources */,
+				C1038F9D2668CCA000BA19D7 /* Frameworks */,
+				C1038F9E2668CCA000BA19D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEXT.Beacon;
+			packageProductDependencies = (
+				C1038FD22668EB6500BA19D7 /* Alamofire */,
+				C1038FFD26690B6F00BA19D7 /* KeychainAccess */,
+				C1F286952677B47E00118374 /* SwiftUIRefresh */,
+				B793167D26A08D49001D716E /* Atomics */,
+			);
+			productName = Volt;
+			productReference = C1038FA02668CCA000BA19D7 /* NEXT.Beacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1038F982668CCA000BA19D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C1038F9F2668CCA000BA19D7 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = C1038F9B2668CCA000BA19D7 /* Build configuration list for PBXProject "NEXT.Beacon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = C1038F972668CCA000BA19D7;
+			packageReferences = (
+				C1038FD12668EB6500BA19D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C1038FFC26690B6F00BA19D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				C1F286942677B47E00118374 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
+				B793167C26A08D49001D716E /* XCRemoteSwiftPackageReference "swift-atomics" */,
+			);
+			productRefGroup = C1038FA12668CCA000BA19D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1038F9F2668CCA000BA19D7 /* NEXT.Beacon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1038F9E2668CCA000BA19D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1038FBE2668CF8A00BA19D7 /* Assets.xcassets in Resources */,
+				C1AE6FFF279FFAAC006C46C6 /* InfoPlist.strings in Resources */,
+				C1E4C056266E8BA00024D1FD /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1038F9C2668CCA000BA19D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12E5B52269CB9F100FD991C /* Array+Volt.swift in Sources */,
+				C1EF037F2672178600980ACB /* BaseApiService.swift in Sources */,
+				C1EF038126722A8600980ACB /* BaseDataService.swift in Sources */,
+				C1EF038326723B8400980ACB /* BaseRepository.swift in Sources */,
+				C1E4C051266E641C0024D1FD /* BleDevice.swift in Sources */,
+				C1E4C04F266E62F30024D1FD /* BleError.swift in Sources */,
+				C1E4C04D266E61AD0024D1FD /* BleManager.swift in Sources */,
+				C10C608C2876EDC700D24BD2 /* HeaderView.swift in Sources */,
+				C1D9FFC4267CBA6700FD2C2C /* BleStatus.swift in Sources */,
+				C1E4C053266E67F90024D1FD /* BleUtil.swift in Sources */,
+				C10C608E2876EDF700D24BD2 /* LoadButtonViewModifier.swift in Sources */,
+				C1E4C055266E6B360024D1FD /* CBUUID+Volt.swift in Sources */,
+				C11873BA2790669E0068B4B0 /* CLProximity+Volt.swift in Sources */,
+				C1D7041F266A3B2A007CD802 /* DbError.swift in Sources */,
+				C1E8B5D027A2D90100FA6B20 /* Encodable+Volt.swift in Sources */,
+				C1EF03872672595E00980ACB /* EntityFetchProtocol.swift in Sources */,
+				C10C60A52877261C00D24BD2 /* CompleteListViewModel.swift in Sources */,
+				C1D70425266A467F007CD802 /* EnvironmentValues+Volt.swift in Sources */,
+				C10C60A3287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift in Sources */,
+				C1EF036C26720B3B00980ACB /* Equipment.swift in Sources */,
+				C10C609C2876F3CD00D24BD2 /* LocalDB.xcdatamodeld in Sources */,
+				C1B603022673978400D5414A /* EquipmentRepository.swift in Sources */,
+				C1EF0368267205D500980ACB /* EquipmentType.swift in Sources */,
+				C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */,
+				C10C60922876EE6A00D24BD2 /* SmallButtonViewModifier.swift in Sources */,
+				C1EF038A2672604300980ACB /* EquipmentTypeRepository.swift in Sources */,
+				C10390082669208200BA19D7 /* JSONDecoder+Volt.swift in Sources */,
+				C1038FF02669049B00BA19D7 /* Logger.swift in Sources */,
+				C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */,
+				C1E8B5D927A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift in Sources */,
+				C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */,
+				C1038FF92669096200BA19D7 /* Optional+Volt.swift in Sources */,
+				C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */,
+				846FEF61269309BA003F18EA /* PPEView.swift in Sources */,
+				8456161D2693333900493831 /* PPEViewModel.swift in Sources */,
+				845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */,
+				C11875A42670BA0900CE1EDD /* QrReaderPreview.swift in Sources */,
+				C11875A02670B2E700CE1EDD /* QrReaderService.swift in Sources */,
+				C11875A62670BC8400CE1EDD /* QrReaderView.swift in Sources */,
+				C11875A22670B75F00CE1EDD /* QrReaderViewModel.swift in Sources */,
+				C10C60A1287722AC00D24BD2 /* CompleteListView.swift in Sources */,
+				C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */,
+				C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */,
+				C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */,
+				C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */,
+				84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */,
+				C1038FC12668CFA600BA19D7 /* VoltApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1AE7001279FFAAC006C46C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AE7002279FFAAF006C46C6 /* de */,
+				C1AE7000279FFAAC006C46C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1E4C058266E8BA00024D1FD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1ED0B6A268F175E000FD642 /* de */,
+				C1E4C057266E8BA00024D1FD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1038FB22668CCA100BA19D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1038FB32668CCA100BA19D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1038FB52668CCA100BA19D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = MV5WK2XPCL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Volt/Sources/app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.next.beacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1038FB62668CCA100BA19D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = MV5WK2XPCL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Volt/Sources/app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.next.beacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1038F9B2668CCA000BA19D7 /* Build configuration list for PBXProject "NEXT.Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1038FB22668CCA100BA19D7 /* Debug */,
+				C1038FB32668CCA100BA19D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1038FB42668CCA100BA19D7 /* Build configuration list for PBXNativeTarget "NEXT.Beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1038FB52668CCA100BA19D7 /* Debug */,
+				C1038FB62668CCA100BA19D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B793167C26A08D49001D716E /* XCRemoteSwiftPackageReference "swift-atomics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-atomics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		C1038FD12668EB6500BA19D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		C1038FFC26690B6F00BA19D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		C1F286942677B47E00118374 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUIRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B793167D26A08D49001D716E /* Atomics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B793167C26A08D49001D716E /* XCRemoteSwiftPackageReference "swift-atomics" */;
+			productName = Atomics;
+		};
+		C1038FD22668EB6500BA19D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1038FD12668EB6500BA19D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C1038FFD26690B6F00BA19D7 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1038FFC26690B6F00BA19D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		C1F286952677B47E00118374 /* SwiftUIRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1F286942677B47E00118374 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
+			productName = SwiftUIRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C10C609A2876F3CD00D24BD2 /* LocalDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C10C609B2876F3CD00D24BD2 /* LocalDB.xcdatamodel */,
+			);
+			currentVersion = C10C609B2876F3CD00D24BD2 /* LocalDB.xcdatamodel */;
+			path = LocalDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1038F982668CCA000BA19D7 /* Project object */;
+}

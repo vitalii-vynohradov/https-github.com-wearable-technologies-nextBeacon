@@ -1,0 +1,114 @@
+/* 
+  Localizable.strings
+  Volt
+
+  Created by Vitalii Vynohradov on 03.06.2021.
+  
+*/
+
+/* General */
+"general_ok"                                = "OK";
+"general_exit"                              = "Exit";
+"general_cancel"                            = "Cancel";
+"general_settings"                          = "Settings";
+
+/* Error */
+"error_generic_title"                       = "Error";
+"error_generic_error_message"               = "An error has occurred.";
+"error_account_already_linked_message"      = "We can’t process your request. Please try again later!";
+"error_paired_not_all"                      = "You haven't added all of the items yet. Please add it now or later";
+"error_not_all_detected"                    = "Please add the equipment and re-enter the activity area";
+
+/* BT Errors */
+"bt_permission_denied"                      = "The app does not have Bluetooth permission. Please enable it in settings";
+"bt_disabled"                               = "Bluetooth is turned off. Please enable Bluetooth";
+"bt_not_supported"                          = "Bluetooth is not supported on your device, connection will not be possible";
+"bt_resetting"                              = "Bluetooth is being reset, please try again";
+"bt_unknown_error"                          = "Unknown Bluetooth error";
+
+/* Location Tracking Errors */
+"location_tracking_disabled"                = "The app does not have Location Tracking permissions. Please enable \"Always\" access in settings";
+"location_tracking_restricted"              = "Location tracking is restricted";
+
+/* Notifications Errors */
+"notifications_disabled"                    = "The app does not have Notifications permissions. Please enable them in settings";
+
+/* Camera Errors */
+"camera_permission_title"                   = "Camera Access";
+"camera_permission_text"                    = "App doesn't have access to use your camera, please update your privacy settings";
+
+/* QR reader screen*/
+"qr_reader_title"                           = "Pair the beacon";
+"qr_reader_info_text"                       = "Searching...";
+"qr_reader_ok"                              = "QR code and ID recognized";
+"qr_error_parsing"                          = "QR code and NOT recognized";
+
+/* Missions screen */
+"mission_empty"                             = "Tasks not found";
+"mission_title"                             = "Tasks";
+"mission_desc_error"                        = "Description unavailable";
+
+/* Equipment screen */
+"eq_empty"                                  = "Equipment not found";
+"eq_add_button_title"                       = "Add";
+"eq_title"                                  = "Equipment";
+"eq_select_type_title"                      = "Select equipment type";
+"eq_conflict"                               = "This ID is already taken. Please pair another beacon";
+
+/* Personal Protective Equipment */
+"ppe_title"                                 = "PPE";
+"ppe_pair"                                  = "Pair";
+"ppe_unpair"                                = "Unpair";
+"ppe_paired"                                = "Paired";
+"ppe_incomplete"                            = "PPE incomplete";
+"ppe_complete"                              = "PPE complete";
+
+/* Settings */
+"settings_title"                            = "Settings";
+"settings_alerts"                           = "Alerts";
+"settings_car"                              = "Car";
+"settings_active"                           = "Active";
+"settings_inactive"                         = "Inactive";
+"settings_disable_sound"                    = "Disable sound";
+"settings_disable_vibration"                = "Disable vibration";
+"settings_log"                              = "Logs";
+"settings_log_share"                        = "Share log file";
+"settings_log_clear"                        = "Clear log file";
+"settings_log_clear_check"                  = "Are you sure?";
+"settings_version"                          = "Version: %@";
+
+/* Map */
+"map_title"                                 = "Map";
+"map_destination_reached_title"             = "Destination Reached";
+"map_destination_reached_message"           = "Check equipment and continue task";
+
+/* Personal Protective Equipment Check */
+"ppe_check_title"                           = "Required PPE";
+"ppe_check_complete"                        = "PPE complete";
+"ppe_check_incomplete"                      = "PPE incomplete";
+"ppe_check_missing_equipment_title"         = "Missing Equipment";
+"ppe_check_missing_equipment_message"       = "Please add missing equipment";
+
+/* Permissions */
+"permissions_title"                         = "Permissions";
+
+/* Beacon */
+"beacon_not_found"                          = "Not found";
+"beacon_permission_denied"                  = "Location access denied";
+"beacon_ranging_denied"                     = "Beacons ranging unavailable";
+"beacon_monitoring_denied"                  = "Beacons monitoring unavailable";
+
+/* Missions manual load */
+"missions_load_empty"                       = "Tasks not loaded!";
+"missions_load_title"                       = "Complete list";
+"missions_load_equipment"                   = "Equipment";
+"missions_load_missions"                    = "Tasks";
+"missions_load_button"                      = "Load";
+"missions_check_button"                     = "Check";
+"missions_available_button"                 = "Available tasks";
+
+/* Route record */
+"route_record_button"                       = "Stop record";
+"route_record_save"                         = "Stop and save the record?";
+"route_record_cancel"                       = "Are you sure you want to stop the record without saving?";
+"route_not_found"                           = "Routes not found.";

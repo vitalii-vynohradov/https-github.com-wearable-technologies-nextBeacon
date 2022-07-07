@@ -1,0 +1,114 @@
+/* 
+  Localizable.strings
+  Volt
+
+  Created by Vitalii Vynohradov on 03.06.2021.
+  
+*/
+
+/* General */
+"general_ok"                                = "OK";
+"general_exit"                              = "Beenden";
+"general_cancel"                            = "Abbrechen";
+"general_settings"                          = "Einstellungen";
+
+/* Error */
+"error_generic_title"                       = "Error";
+"error_generic_error_message"               = "Ein Fehler ist aufgetreten.";
+"error_account_already_linked_message"      = "Wir können Ihre Anfrage nicht bearbeiten. Bitte versuchen Sie es später noch einmal.";
+"error_paired_not_all"                      = "Sie haben noch nicht alle Gegenstände hinzugefügt. Bitte ergänze diese jetzt oder zu einem späteren Zeitpunkt.";
+"error_not_all_detected"                    = "Bitte füge den Ausrüstungsgegenstand hinzu und betrete den Tätigkeitsbereich erneut.";
+
+/* BT Errors */
+"bt_permission_denied"                      = "Bitte Bluetooth aktivieren, einzelne PSA Sets zu erstellen.";
+"bt_disabled"                               = "Aktivieren Sie Bluetooth, um nach Geräten zu suchen.";
+"bt_not_supported"                          = "Bluetooth wird auf Ihrem Gerät nicht unterstützt, eine Verbindung ist nicht möglich.";
+"bt_resetting"                              = "Bluetooth wird zurückgesetzt, bitte versuchen Sie es erneut.";
+"bt_unknown_error"                          = "Unbekannter Bluetooth-Fehler.";
+
+/* Location Tracking Errors */
+"location_tracking_disabled"                = "Die App verfügt nicht über Standortverfolgungsberechtigungen. Bitte aktivieren Sie den \"Immer\"-Zugriff in den Einstellungen";
+"location_tracking_restricted"              = "Standortverfolgung ist eingeschränkt";
+
+/* Notifications Errors */
+"notifications_disabled"                    = "Bitte Open Settings and enable Notifications";
+
+/* Camera Errors */
+"camera_permission_title"                   = "Kamerazugriff";
+"camera_permission_text"                    = "Die App hat keinen Zugriff auf Ihre Kamera. Bitte aktualisieren Sie Ihre Datenschutzeinstellungen.";
+
+/* QR reader screen */
+"qr_reader_title"                           = "Beacon koppeln";
+"qr_reader_info_text"                       = "Suche...";
+"qr_reader_ok"                              = "QR Code und ID erkannt.";
+"qr_error_parsing"                          = "QR Code und  NICHT erkannt.";
+
+/* Missions screen */
+"mission_empty"                             = "Aufgaben nicht gefunden";
+"mission_title"                             = "Aufgaben";
+"mission_desc_error"                        = "Beschreibung nicht verfügbar";
+
+/* Equipment screen */
+"eq_empty"                                  = "Ausrüstung nicht gefunden";
+"eq_add_button_title"                       = "Hinzufügen";
+"eq_title"                                  = "Ausrüstung";
+"eq_select_type_title"                      = "Gerätetyp auswählen";
+"eq_conflict"                               = "Diese ID ist schon vergeben. Bitte kopple einen anderen Beacon.";
+
+/* Personal Protective Equipment */
+"ppe_title"                                 = "PSA";
+"ppe_pair"                                  = "Koppeln";
+"ppe_unpair"                                = "Entkoppeln";
+"ppe_paired"                                = "Gekoppelt";
+"ppe_incomplete"                            = "PSA unvollständig";
+"ppe_complete"                              = "PSA vollständig";
+
+/* Settings */
+"settings_title"                            = "Einstellungen";
+"settings_alerts"                           = "Warnungen";
+"settings_car"                              = "Wagen";
+"settings_active"                           = "Aktiv";
+"settings_inactive"                         = "Inaktiv";
+"settings_disable_sound"                    = "Stummschaltung Ton";
+"settings_disable_vibration"                = "Stummschaltung Vibration";
+"settings_log"                              = "Protokolle";
+"settings_log_share"                        = "Protokolldatei teilen";
+"settings_log_clear"                        = "Protokolldatei löschen";
+"settings_log_clear_check"                  = "Bist du sicher?";
+"settings_version"                          = "Ausführung: %@";
+
+/* Map */
+"map_title"                                 = "Karte";
+"map_destination_reached_title"             = "Ziel Erreicht";
+"map_destination_reached_message"           = "Ausrüstung überprüfen und aufgabe fortsetzen";
+
+/* Personal Protective Equipment Check */
+"ppe_check_title"                           = "Steigarbeiten Mast";
+"ppe_check_complete"                        = "PSA vollständig";
+"ppe_check_incomplete"                      = "PSA unvollständig";
+"ppe_check_missing_equipment_title"         = "Fehlende Ausrüstung";
+"ppe_check_missing_equipment_message"       = "Bitte füge den fehlenden Ausrüstungsgegenstand hinzu.";
+
+/* Permissions */
+"permissions_title"                         = "PSA Sets";
+
+/* Beacon */
+"beacon_not_found"                          = "Nicht gefunden";
+"beacon_permission_denied"                  = "Standortzugriff verweigert";
+"beacon_ranging_denied"                     = "Beacons reichen nicht verfügbar";
+"beacon_monitoring_denied"                  = "Beacons-Überwachung nicht verfügbar";
+
+/* Missions manual load */
+"missions_load_empty"                       = "Aufgaben nicht geladen!";
+"missions_load_title"                       = "Gesamtliste";
+"missions_load_equipment"                   = "Ausrüstung";
+"missions_load_missions"                    = "Aufgaben";
+"missions_load_button"                      = "Tätigkeiten abrufen";
+"missions_check_button"                     = "Prüfen";
+"missions_available_button"                 = "Verfügbare Aufgaben";
+
+/* Route record */
+"route_record_button"                       = "Aufnahme anhalten";
+"route_record_save"                         = "Anhalten und den Datensatz speichern?";
+"route_record_cancel"                       = "Möchten Sie die Aufzeichnung wirklich beenden, ohne sie zu speichern?";
+"route_not_found"                           = "Routen nicht gefunden.";
