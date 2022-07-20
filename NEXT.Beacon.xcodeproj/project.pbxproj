@@ -41,6 +41,13 @@
 		C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */; };
 		C1AE6FFF279FFAAC006C46C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE7001279FFAAC006C46C6 /* InfoPlist.strings */; };
 		C1B603022673978400D5414A /* EquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B603012673978400D5414A /* EquipmentRepository.swift */; };
+		C1CBC8A8288802C800544E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CBC8A7288802C800544E8C /* Main.storyboard */; };
+		C1CBC8AA2888032200544E8C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CBC8A92888032200544E8C /* Launch.storyboard */; };
+		C1CBC8AC28881B9600544E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC8AB28881B9600544E8C /* AppDelegate.swift */; };
+		C1CBC8AE28881DF500544E8C /* PPEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC8AD28881DF500544E8C /* PPEViewController.swift */; };
+		C1CBC8D028882BB100544E8C /* CompleteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC8CF28882BB100544E8C /* CompleteListViewController.swift */; };
+		C1CBC8D2288844AB00544E8C /* PPEViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC8D1288844AB00544E8C /* PPEViewCell.swift */; };
+		C1CBC8D428884AA000544E8C /* CompleteListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CBC8D328884AA000544E8C /* CompleteListViewCell.swift */; };
 		C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D70416266A0DAB007CD802 /* RepositoryError.swift */; };
 		C1D7041F266A3B2A007CD802 /* DbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7041E266A3B2A007CD802 /* DbError.swift */; };
 		C1D70425266A467F007CD802 /* EnvironmentValues+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D70424266A467F007CD802 /* EnvironmentValues+Volt.swift */; };
@@ -98,6 +105,13 @@
 		C1AE7000279FFAAC006C46C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1AE7002279FFAAF006C46C6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1B603012673978400D5414A /* EquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentRepository.swift; sourceTree = "<group>"; };
+		C1CBC8A7288802C800544E8C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1CBC8A92888032200544E8C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		C1CBC8AB28881B9600544E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1CBC8AD28881DF500544E8C /* PPEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEViewController.swift; sourceTree = "<group>"; };
+		C1CBC8CF28882BB100544E8C /* CompleteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListViewController.swift; sourceTree = "<group>"; };
+		C1CBC8D1288844AB00544E8C /* PPEViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEViewCell.swift; sourceTree = "<group>"; };
+		C1CBC8D328884AA000544E8C /* CompleteListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListViewCell.swift; sourceTree = "<group>"; };
 		C1D70416266A0DAB007CD802 /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		C1D7041E266A3B2A007CD802 /* DbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbError.swift; sourceTree = "<group>"; };
 		C1D70424266A467F007CD802 /* EnvironmentValues+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Volt.swift"; sourceTree = "<group>"; };
@@ -139,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				846FEF60269309BA003F18EA /* PPEView.swift */,
+				C1CBC8D1288844AB00544E8C /* PPEViewCell.swift */,
+				C1CBC8AD28881DF500544E8C /* PPEViewController.swift */,
 				8456161C2693333900493831 /* PPEViewModel.swift */,
 				845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */,
 			);
@@ -221,10 +237,12 @@
 		C1038FBB2668CE9000BA19D7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				C10C609F2877228800D24BD2 /* list */,
-				C148B096266FA8D3004139BD /* qr */,
-				8454A538269762C700323613 /* ppe */,
+				C1CBC8A92888032200544E8C /* Launch.storyboard */,
+				C1CBC8A7288802C800544E8C /* Main.storyboard */,
 				C10C608A2876ED9900D24BD2 /* common */,
+				C10C609F2877228800D24BD2 /* list */,
+				8454A538269762C700323613 /* ppe */,
+				C148B096266FA8D3004139BD /* qr */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 			children = (
 				C1038FC02668CFA600BA19D7 /* Info.plist */,
 				C1038FBF2668CFA600BA19D7 /* VoltApp.swift */,
+				C1CBC8AB28881B9600544E8C /* AppDelegate.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -334,6 +353,8 @@
 			isa = PBXGroup;
 			children = (
 				C10C60A0287722AC00D24BD2 /* CompleteListView.swift */,
+				C1CBC8D328884AA000544E8C /* CompleteListViewCell.swift */,
+				C1CBC8CF28882BB100544E8C /* CompleteListViewController.swift */,
 				C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */,
 			);
 			path = list;
@@ -465,8 +486,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1038FBE2668CF8A00BA19D7 /* Assets.xcassets in Resources */,
+				C1CBC8AA2888032200544E8C /* Launch.storyboard in Resources */,
 				C1AE6FFF279FFAAC006C46C6 /* InfoPlist.strings in Resources */,
 				C1E4C056266E8BA00024D1FD /* Localizable.strings in Resources */,
+				C1CBC8A8288802C800544E8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +524,8 @@
 				C1B603022673978400D5414A /* EquipmentRepository.swift in Sources */,
 				C1EF0368267205D500980ACB /* EquipmentType.swift in Sources */,
 				C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */,
+				C1CBC8AC28881B9600544E8C /* AppDelegate.swift in Sources */,
+				C1CBC8D428884AA000544E8C /* CompleteListViewCell.swift in Sources */,
 				C10C60922876EE6A00D24BD2 /* SmallButtonViewModifier.swift in Sources */,
 				C1EF038A2672604300980ACB /* EquipmentTypeRepository.swift in Sources */,
 				C10390082669208200BA19D7 /* JSONDecoder+Volt.swift in Sources */,
@@ -508,8 +533,10 @@
 				C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */,
 				C1E8B5D927A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift in Sources */,
 				C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */,
+				C1CBC8AE28881DF500544E8C /* PPEViewController.swift in Sources */,
 				C1038FF92669096200BA19D7 /* Optional+Volt.swift in Sources */,
 				C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */,
+				C1CBC8D2288844AB00544E8C /* PPEViewCell.swift in Sources */,
 				846FEF61269309BA003F18EA /* PPEView.swift in Sources */,
 				8456161D2693333900493831 /* PPEViewModel.swift in Sources */,
 				845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */,
@@ -521,6 +548,7 @@
 				C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */,
 				C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */,
 				C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */,
+				C1CBC8D028882BB100544E8C /* CompleteListViewController.swift in Sources */,
 				C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */,
 				84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */,
 				C1038FC12668CFA600BA19D7 /* VoltApp.swift in Sources */,

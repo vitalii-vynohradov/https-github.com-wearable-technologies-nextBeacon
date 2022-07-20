@@ -5,7 +5,7 @@
 //  Created by Vitalii Vynohradov on 03.06.2021.
 //
 
-import CoreLocation
+/*import CoreLocation
 import SwiftUI
 
 @main
@@ -26,4 +26,4 @@ struct VoltApp: App {
         UITabBar.appearance().backgroundColor = UIColor(named: "TabViewColor")
         UITableView.appearance().backgroundColor = UIColor(named: "TabViewColor")
     }
-}
+}*/
