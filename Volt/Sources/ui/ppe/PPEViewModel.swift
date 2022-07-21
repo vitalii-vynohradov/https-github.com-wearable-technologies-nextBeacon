@@ -16,6 +16,11 @@ struct PPEDetails: Identifiable {
     let mac: String
 }
 
+protocol PPEViewModelDelegate: NSObject {
+    func onUpdateAllReady(ready: Bool)
+    func onUpdateEquipment()
+}
+
 final class PPEViewModel: ObservableObject {
     private var equipmentTypesRepository = EquipmentTypeRepository.defaultValue
     private var equipmentRepository = EquipmentRepository.defaultValue
@@ -29,10 +34,7 @@ final class PPEViewModel: ObservableObject {
     @Published var dismissedQrReader = true
     @Published var qrCode: String?
 
-    @Published var showAlertError = false
-    @Published var alertErrorMsg = ""
-
-    @Published var showUnpairAlert = false
+    weak var delegate: PPEViewModelDelegate?
 
     private var selectedType: Int32?
     private var unpairId: Int32?
@@ -74,26 +76,16 @@ final class PPEViewModel: ObservableObject {
             .store(in: &self.subscriptions)
 
         equipmentTypesRepository.$error
-            .sink { [weak self] error in
+            .sink { error in
                 guard let error = error else { return }
-                self?.alertErrorMsg = "Equipment types repository error: \(error.localizedDescription)"
-                self?.showAlertError = true
-                self?.equipmentTypesRepository.error = nil
+                Logger.debug("Equipment types repository error: \(error.localizedDescription)")
             }
             .store(in: &self.subscriptions)
 
         equipmentRepository.$error
-            .sink { [weak self] error in
+            .sink { error in
                 guard let error = error else { return }
-                switch error {
-                case .dbError(.badRequest):
-                    self?.alertErrorMsg = "eq_conflict".localized()
-                default:
-                    self?.alertErrorMsg = "Equipment repository error: \(error.localizedDescription)"
-                }
-                self?.showAlertError = true
-                self?.qrCode = nil
-                self?.equipmentRepository.error = nil
+                Logger.debug("Equipment repository error: \(error.localizedDescription)")
             }
             .store(in: &self.subscriptions)
 
@@ -103,6 +95,18 @@ final class PPEViewModel: ObservableObject {
                 if didDismiss {
                     self?.handleQrCode(code: qrCode)
                 }
+            }
+            .store(in: &self.subscriptions)
+
+        $areAllPPEPaired
+            .sink { [weak self] ready in
+                self?.delegate?.onUpdateAllReady(ready: ready)
+            }
+            .store(in: &self.subscriptions)
+
+        $allPPE
+            .sink { [weak self] _ in
+                self?.delegate?.onUpdateEquipment()
             }
             .store(in: &self.subscriptions)
     }
@@ -126,14 +130,8 @@ final class PPEViewModel: ObservableObject {
         showQrReader = true
     }
 
-    func unpair() {
-        guard let id = unpairId else { return }
+    func unpair(id: Int32) {
         equipmentRepository.deleteEquipmentLocal(id: id)
-    }
-
-    func ensureUnpair(id: Int32) {
-        unpairId = id
-        showUnpairAlert = true
     }
 
     private func handleQrCode(code: String?) {
@@ -143,8 +141,6 @@ final class PPEViewModel: ObservableObject {
             Logger.debug("->> \(type) - \(mac)")
             equipmentRepository.addEquipmentLocal(id: id, typeId: type, mac: mac)
         } else {
-            self.alertErrorMsg = "Can't parse QR: \(code)"
-            self.showAlertError = true
             Logger.debug("Can't parse QR: \(code)")
         }
     }

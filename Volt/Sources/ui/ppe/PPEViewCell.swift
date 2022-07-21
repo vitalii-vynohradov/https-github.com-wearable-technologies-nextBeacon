@@ -14,4 +14,11 @@ class PPEViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var pairLabel: UILabel!
+
+    func update(_ equipment: PPEDetails) {
+        let isPaired = equipment.mac != ""
+        nameLabel.text = equipment.name
+        idLabel.text = isPaired ? "ID: \(equipment.mac)" : ""
+        pairLabel.text = isPaired ? "UNPAIR" : "PAIR"
+    }
 }

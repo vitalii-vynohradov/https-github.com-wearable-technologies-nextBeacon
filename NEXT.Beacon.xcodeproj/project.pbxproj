@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		8456161D2693333900493831 /* PPEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456161C2693333900493831 /* PPEViewModel.swift */; };
 		845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */; };
-		846FEF61269309BA003F18EA /* PPEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FEF60269309BA003F18EA /* PPEView.swift */; };
 		84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBB3DD26715E1F005448E4 /* View+Volt.swift */; };
 		B793167E26A08D49001D716E /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = B793167D26A08D49001D716E /* Atomics */; };
 		C1038FBE2668CF8A00BA19D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */; };
-		C1038FC12668CFA600BA19D7 /* VoltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FBF2668CFA600BA19D7 /* VoltApp.swift */; };
 		C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FC32668CFC700BA19D7 /* PersistenceController.swift */; };
 		C1038FD32668EB6500BA19D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C1038FD22668EB6500BA19D7 /* Alamofire */; };
 		C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FE22668FE1900BA19D7 /* String+Volt.swift */; };
@@ -72,11 +70,9 @@
 /* Begin PBXFileReference section */
 		8456161C2693333900493831 /* PPEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEViewModel.swift; sourceTree = "<group>"; };
 		845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
-		846FEF60269309BA003F18EA /* PPEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEView.swift; sourceTree = "<group>"; };
 		84EBB3DD26715E1F005448E4 /* View+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Volt.swift"; sourceTree = "<group>"; };
 		C1038FA02668CCA000BA19D7 /* NEXT.Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEXT.Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1038FBF2668CFA600BA19D7 /* VoltApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltApp.swift; sourceTree = "<group>"; };
 		C1038FC02668CFA600BA19D7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1038FC32668CFC700BA19D7 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		C1038FE22668FE1900BA19D7 /* String+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Volt.swift"; sourceTree = "<group>"; };
@@ -150,11 +146,9 @@
 		8454A538269762C700323613 /* ppe */ = {
 			isa = PBXGroup;
 			children = (
-				846FEF60269309BA003F18EA /* PPEView.swift */,
 				C1CBC8D1288844AB00544E8C /* PPEViewCell.swift */,
 				C1CBC8AD28881DF500544E8C /* PPEViewController.swift */,
 				8456161C2693333900493831 /* PPEViewModel.swift */,
-				845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */,
 			);
 			path = ppe;
 			sourceTree = "<group>";
@@ -261,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				C1038FC02668CFA600BA19D7 /* Info.plist */,
-				C1038FBF2668CFA600BA19D7 /* VoltApp.swift */,
 				C1CBC8AB28881B9600544E8C /* AppDelegate.swift */,
 			);
 			path = app;
@@ -388,6 +381,7 @@
 				C138F572267111950039C911 /* viewmodel */,
 				C138F5712671118F0039C911 /* views */,
 				C11875A52670BC8400CE1EDD /* QrReaderView.swift */,
+				845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */,
 			);
 			path = qr;
 			sourceTree = "<group>";
@@ -534,7 +528,6 @@
 				C1038FF92669096200BA19D7 /* Optional+Volt.swift in Sources */,
 				C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */,
 				C1CBC8D2288844AB00544E8C /* PPEViewCell.swift in Sources */,
-				846FEF61269309BA003F18EA /* PPEView.swift in Sources */,
 				8456161D2693333900493831 /* PPEViewModel.swift in Sources */,
 				845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */,
 				C11875A42670BA0900CE1EDD /* QrReaderPreview.swift in Sources */,
@@ -547,7 +540,6 @@
 				C1CBC8D028882BB100544E8C /* CompleteListViewController.swift in Sources */,
 				C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */,
 				84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */,
-				C1038FC12668CFA600BA19D7 /* VoltApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

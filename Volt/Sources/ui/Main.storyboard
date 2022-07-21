@@ -34,38 +34,38 @@
                                 <rect key="frame" x="20" y="108" width="374" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PPECell" rowHeight="64" id="clt-eY-NSK" customClass="PPEViewCell" customModule="NEXT_Beacon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PPECell" rowHeight="80" id="clt-eY-NSK" customClass="PPEViewCell" customModule="NEXT_Beacon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="clt-eY-NSK" id="HYT-v8-yRo">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un1-f4-ybv">
-                                                    <rect key="frame" x="16" y="21.5" width="82" height="21"/>
+                                                    <rect key="frame" x="16" y="29.5" width="82" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwx-1c-jBm">
-                                                    <rect key="frame" x="106" y="21.5" width="62" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGreenColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfa-tp-jla">
-                                                    <rect key="frame" x="320" y="23" width="34" height="18"/>
+                                                    <rect key="frame" x="320" y="31" width="34" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwx-1c-jBm">
+                                                    <rect key="frame" x="16" y="53.5" width="49" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="un1-f4-ybv" firstAttribute="leading" secondItem="HYT-v8-yRo" secondAttribute="leading" constant="16" id="4Wh-Fr-bbp"/>
+                                                <constraint firstItem="iwx-1c-jBm" firstAttribute="top" secondItem="un1-f4-ybv" secondAttribute="bottom" constant="3" id="7KG-Oy-Jgu"/>
+                                                <constraint firstItem="iwx-1c-jBm" firstAttribute="leading" secondItem="HYT-v8-yRo" secondAttribute="leading" constant="16" id="Ju7-Ad-85U"/>
                                                 <constraint firstItem="gfa-tp-jla" firstAttribute="centerY" secondItem="HYT-v8-yRo" secondAttribute="centerY" id="OyJ-BX-Dv3"/>
-                                                <constraint firstItem="iwx-1c-jBm" firstAttribute="centerY" secondItem="HYT-v8-yRo" secondAttribute="centerY" id="Ymg-oD-hrv"/>
                                                 <constraint firstItem="un1-f4-ybv" firstAttribute="centerY" secondItem="HYT-v8-yRo" secondAttribute="centerY" id="Yv9-fY-cPk"/>
-                                                <constraint firstItem="iwx-1c-jBm" firstAttribute="leading" secondItem="un1-f4-ybv" secondAttribute="trailing" constant="8" id="eee-TB-1mM"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="gfa-tp-jla" secondAttribute="trailing" id="oJI-eW-cec"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -93,6 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Personal Protective Equipment" id="vZm-Jk-co6"/>
                     <connections>
+                        <outlet property="completeButton" destination="mEh-JM-xzt" id="o1W-CF-z8k"/>
                         <outlet property="table" destination="7cR-oA-FJm" id="8Ds-1D-PoZ"/>
                     </connections>
                 </viewController>
