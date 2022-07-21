@@ -30,14 +30,8 @@ final class PPEViewModel: ObservableObject {
     @Published var allPPE: [PPEDetails] = []
     @Published var areAllPPEPaired = false
 
-    @Published var showQrReader = false
-    @Published var dismissedQrReader = true
-    @Published var qrCode: String?
-
     weak var delegate: PPEViewModelDelegate?
 
-    private var selectedType: Int32?
-    private var unpairId: Int32?
     private var subscriptions = Set<AnyCancellable>()
 
     private func attachRepositories() {
@@ -63,6 +57,7 @@ final class PPEViewModel: ObservableObject {
         $allPPE
             .sink { [weak self] data in
                 self?.areAllPPEPaired = !data.isEmpty && data.allSatisfy { $0.equipmentId > 0 }
+                self?.delegate?.onUpdateEquipment()
             }
             .store(in: &self.subscriptions)
 
@@ -89,24 +84,9 @@ final class PPEViewModel: ObservableObject {
             }
             .store(in: &self.subscriptions)
 
-        $dismissedQrReader.combineLatest($qrCode)
-            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
-            .sink { [weak self] didDismiss, qrCode in
-                if didDismiss {
-                    self?.handleQrCode(code: qrCode)
-                }
-            }
-            .store(in: &self.subscriptions)
-
         $areAllPPEPaired
             .sink { [weak self] ready in
                 self?.delegate?.onUpdateAllReady(ready: ready)
-            }
-            .store(in: &self.subscriptions)
-
-        $allPPE
-            .sink { [weak self] _ in
-                self?.delegate?.onUpdateEquipment()
             }
             .store(in: &self.subscriptions)
     }
@@ -125,23 +105,19 @@ final class PPEViewModel: ObservableObject {
         equipmentRepository.loadLocal()
     }
 
-    func pair(typeId: Int32) {
-        selectedType = typeId
-        showQrReader = true
-    }
-
     func unpair(id: Int32) {
         equipmentRepository.deleteEquipmentLocal(id: id)
     }
 
-    private func handleQrCode(code: String?) {
-        guard let code = code else { return }
-        self.qrCode = nil
-        if let type = selectedType, let mac = code.mac, let id = mac.id {
-            Logger.debug("->> \(type) - \(mac)")
-            equipmentRepository.addEquipmentLocal(id: id, typeId: type, mac: mac)
-        } else {
-            Logger.debug("Can't parse QR: \(code)")
+    func handleQrCodeFor(typeId: Int32, code: String) -> Bool {
+        if let mac = code.mac,
+           let id = mac.id
+        {
+            Logger.debug("->> \(typeId) - \(mac)")
+            equipmentRepository.addEquipmentLocal(id: id, typeId: typeId, mac: mac)
+            return true
         }
+
+        return false
     }
 }

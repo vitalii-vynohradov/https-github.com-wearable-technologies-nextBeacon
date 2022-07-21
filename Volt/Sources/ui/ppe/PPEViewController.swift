@@ -15,6 +15,8 @@ class PPEViewController: UIViewController {
     
     private var model: PPEViewModel = PPEViewModel()
 
+    private var selectedIndex = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -67,7 +69,14 @@ extension PPEViewController: UITableViewDelegate {
         if isPaired {
             ensureUnpair(id: equipment.equipmentId)
         } else {
-            // show qr
+            selectedIndex = indexPath.row
+            if let destination = UIStoryboard.init(
+                name: "Main",
+                bundle: Bundle.main
+            ).instantiateViewController(withIdentifier: "QrCodeViewController") as? QrCodeViewController {
+                destination.delegate = self
+                navigationController?.pushViewController(destination, animated: true)
+            }
         }
     }
 }
@@ -79,6 +88,18 @@ extension PPEViewController: PPEViewModelDelegate {
 
     func onUpdateEquipment() {
         table.reloadData()
+    }
+}
+
+extension PPEViewController: QrCodeDelegate {
+    func onQrCode(code: String) {
+        let id = model.allPPE[selectedIndex].id
+
+        if !model.handleQrCodeFor(typeId: id, code: code) {
+            let alert = UIAlertController(title: "Can't parse QR code: \(code)", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+            self.present(alert, animated: true)
+        }
     }
 }
 

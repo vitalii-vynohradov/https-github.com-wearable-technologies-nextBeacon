@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8456161D2693333900493831 /* PPEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456161C2693333900493831 /* PPEViewModel.swift */; };
-		845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */; };
 		84EBB3DE26715E1F005448E4 /* View+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBB3DD26715E1F005448E4 /* View+Volt.swift */; };
 		B793167E26A08D49001D716E /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = B793167D26A08D49001D716E /* Atomics */; };
 		C1038FBE2668CF8A00BA19D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */; };
@@ -19,21 +18,12 @@
 		C1038FF92669096200BA19D7 /* Optional+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1038FF82669096200BA19D7 /* Optional+Volt.swift */; };
 		C1038FFE26690B6F00BA19D7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C1038FFD26690B6F00BA19D7 /* KeychainAccess */; };
 		C10390082669208200BA19D7 /* JSONDecoder+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10390072669208200BA19D7 /* JSONDecoder+Volt.swift */; };
-		C10C608C2876EDC700D24BD2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608B2876EDC700D24BD2 /* HeaderView.swift */; };
-		C10C608E2876EDF700D24BD2 /* LoadButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */; };
-		C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */; };
-		C10C60922876EE6A00D24BD2 /* SmallButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */; };
-		C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60932876F00D00D24BD2 /* AlertView.swift */; };
 		C10C609C2876F3CD00D24BD2 /* LocalDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C10C609A2876F3CD00D24BD2 /* LocalDB.xcdatamodeld */; };
-		C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */; };
-		C10C60A3287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */; };
 		C10C60A52877261C00D24BD2 /* CompleteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */; };
 		C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11873B7279054840068B4B0 /* MulticastDelegate.swift */; };
 		C11873BA2790669E0068B4B0 /* CLProximity+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11873B92790669E0068B4B0 /* CLProximity+Volt.swift */; };
-		C11875A02670B2E700CE1EDD /* QrReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C118759F2670B2E700CE1EDD /* QrReaderService.swift */; };
-		C11875A22670B75F00CE1EDD /* QrReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */; };
-		C11875A42670BA0900CE1EDD /* QrReaderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */; };
-		C11875A62670BC8400CE1EDD /* QrReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11875A52670BC8400CE1EDD /* QrReaderView.swift */; };
+		C11A0035288961F5001C8578 /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A0034288961F5001C8578 /* QrCodeViewController.swift */; };
+		C11A003728896FF1001C8578 /* QrCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A003628896FF1001C8578 /* QrCodeReader.swift */; };
 		C12E5B52269CB9F100FD991C /* Array+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E5B51269CB9F100FD991C /* Array+Volt.swift */; };
 		C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */; };
 		C1AE6FFF279FFAAC006C46C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AE7001279FFAAC006C46C6 /* InfoPlist.strings */; };
@@ -69,7 +59,6 @@
 
 /* Begin PBXFileReference section */
 		8456161C2693333900493831 /* PPEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPEViewModel.swift; sourceTree = "<group>"; };
-		845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
 		84EBB3DD26715E1F005448E4 /* View+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Volt.swift"; sourceTree = "<group>"; };
 		C1038FA02668CCA000BA19D7 /* NEXT.Beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEXT.Beacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1038FBD2668CF8A00BA19D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,21 +68,12 @@
 		C1038FEF2669049B00BA19D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		C1038FF82669096200BA19D7 /* Optional+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Volt.swift"; sourceTree = "<group>"; };
 		C10390072669208200BA19D7 /* JSONDecoder+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Volt.swift"; sourceTree = "<group>"; };
-		C10C608B2876EDC700D24BD2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadButtonViewModifier.swift; sourceTree = "<group>"; };
-		C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTextViewModifier.swift; sourceTree = "<group>"; };
-		C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButtonViewModifier.swift; sourceTree = "<group>"; };
-		C10C60932876F00D00D24BD2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C10C609B2876F3CD00D24BD2 /* LocalDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDB.xcdatamodel; sourceTree = "<group>"; };
-		C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledButtonStyle.swift; sourceTree = "<group>"; };
-		C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationLinkViewModifier.swift; sourceTree = "<group>"; };
 		C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListViewModel.swift; sourceTree = "<group>"; };
 		C11873B7279054840068B4B0 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		C11873B92790669E0068B4B0 /* CLProximity+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLProximity+Volt.swift"; sourceTree = "<group>"; };
-		C118759F2670B2E700CE1EDD /* QrReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderService.swift; sourceTree = "<group>"; };
-		C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewModel.swift; sourceTree = "<group>"; };
-		C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderPreview.swift; sourceTree = "<group>"; };
-		C11875A52670BC8400CE1EDD /* QrReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderView.swift; sourceTree = "<group>"; };
+		C11A0034288961F5001C8578 /* QrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewController.swift; sourceTree = "<group>"; };
+		C11A003628896FF1001C8578 /* QrCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeReader.swift; sourceTree = "<group>"; };
 		C12E5B51269CB9F100FD991C /* Array+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Volt.swift"; sourceTree = "<group>"; };
 		C138F56D2670F79B0039C911 /* UIApplication+Volt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Volt.swift"; sourceTree = "<group>"; };
 		C1AE7000279FFAAC006C46C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -231,7 +211,6 @@
 			children = (
 				C1CBC8A92888032200544E8C /* Launch.storyboard */,
 				C1CBC8A7288802C800544E8C /* Main.storyboard */,
-				C10C608A2876ED9900D24BD2 /* common */,
 				C10C609F2877228800D24BD2 /* list */,
 				8454A538269762C700323613 /* ppe */,
 				C148B096266FA8D3004139BD /* qr */,
@@ -326,20 +305,6 @@
 			path = repo;
 			sourceTree = "<group>";
 		};
-		C10C608A2876ED9900D24BD2 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				C10C60932876F00D00D24BD2 /* AlertView.swift */,
-				C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */,
-				C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */,
-				C10C608B2876EDC700D24BD2 /* HeaderView.swift */,
-				C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */,
-				C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */,
-				C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
 		C10C609F2877228800D24BD2 /* list */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,38 +315,11 @@
 			path = list;
 			sourceTree = "<group>";
 		};
-		C138F5712671118F0039C911 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				C11875A32670BA0900CE1EDD /* QrReaderPreview.swift */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		C138F572267111950039C911 /* viewmodel */ = {
-			isa = PBXGroup;
-			children = (
-				C11875A12670B75F00CE1EDD /* QrReaderViewModel.swift */,
-			);
-			path = viewmodel;
-			sourceTree = "<group>";
-		};
-		C138F573267111A70039C911 /* service */ = {
-			isa = PBXGroup;
-			children = (
-				C118759F2670B2E700CE1EDD /* QrReaderService.swift */,
-			);
-			path = service;
-			sourceTree = "<group>";
-		};
 		C148B096266FA8D3004139BD /* qr */ = {
 			isa = PBXGroup;
 			children = (
-				C138F573267111A70039C911 /* service */,
-				C138F572267111950039C911 /* viewmodel */,
-				C138F5712671118F0039C911 /* views */,
-				C11875A52670BC8400CE1EDD /* QrReaderView.swift */,
-				845760D8269A6BEA0067C7A3 /* QRCodeReaderView.swift */,
+				C11A003628896FF1001C8578 /* QrCodeReader.swift */,
+				C11A0034288961F5001C8578 /* QrCodeViewController.swift */,
 			);
 			path = qr;
 			sourceTree = "<group>";
@@ -498,30 +436,26 @@
 				C1E4C051266E641C0024D1FD /* BleDevice.swift in Sources */,
 				C1E4C04F266E62F30024D1FD /* BleError.swift in Sources */,
 				C1E4C04D266E61AD0024D1FD /* BleManager.swift in Sources */,
-				C10C608C2876EDC700D24BD2 /* HeaderView.swift in Sources */,
 				C1D9FFC4267CBA6700FD2C2C /* BleStatus.swift in Sources */,
 				C1E4C053266E67F90024D1FD /* BleUtil.swift in Sources */,
-				C10C608E2876EDF700D24BD2 /* LoadButtonViewModifier.swift in Sources */,
 				C1E4C055266E6B360024D1FD /* CBUUID+Volt.swift in Sources */,
 				C11873BA2790669E0068B4B0 /* CLProximity+Volt.swift in Sources */,
 				C1D7041F266A3B2A007CD802 /* DbError.swift in Sources */,
 				C1E8B5D027A2D90100FA6B20 /* Encodable+Volt.swift in Sources */,
 				C1EF03872672595E00980ACB /* EntityFetchProtocol.swift in Sources */,
+				C11A003728896FF1001C8578 /* QrCodeReader.swift in Sources */,
 				C10C60A52877261C00D24BD2 /* CompleteListViewModel.swift in Sources */,
 				C1D70425266A467F007CD802 /* EnvironmentValues+Volt.swift in Sources */,
-				C10C60A3287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift in Sources */,
 				C1EF036C26720B3B00980ACB /* Equipment.swift in Sources */,
 				C10C609C2876F3CD00D24BD2 /* LocalDB.xcdatamodeld in Sources */,
 				C1B603022673978400D5414A /* EquipmentRepository.swift in Sources */,
+				C11A0035288961F5001C8578 /* QrCodeViewController.swift in Sources */,
 				C1EF0368267205D500980ACB /* EquipmentType.swift in Sources */,
-				C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */,
 				C1CBC8AC28881B9600544E8C /* AppDelegate.swift in Sources */,
 				C1CBC8D428884AA000544E8C /* CompleteListViewCell.swift in Sources */,
-				C10C60922876EE6A00D24BD2 /* SmallButtonViewModifier.swift in Sources */,
 				C1EF038A2672604300980ACB /* EquipmentTypeRepository.swift in Sources */,
 				C10390082669208200BA19D7 /* JSONDecoder+Volt.swift in Sources */,
 				C1038FF02669049B00BA19D7 /* Logger.swift in Sources */,
-				C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */,
 				C1E8B5D927A30D6900FA6B20 /* MKCoordinateRegion+Volt.swift in Sources */,
 				C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */,
 				C1CBC8AE28881DF500544E8C /* PPEViewController.swift in Sources */,
@@ -529,13 +463,7 @@
 				C1038FC62668CFC700BA19D7 /* PersistenceController.swift in Sources */,
 				C1CBC8D2288844AB00544E8C /* PPEViewCell.swift in Sources */,
 				8456161D2693333900493831 /* PPEViewModel.swift in Sources */,
-				845760D9269A6BEA0067C7A3 /* QRCodeReaderView.swift in Sources */,
-				C11875A42670BA0900CE1EDD /* QrReaderPreview.swift in Sources */,
-				C11875A02670B2E700CE1EDD /* QrReaderService.swift in Sources */,
-				C11875A62670BC8400CE1EDD /* QrReaderView.swift in Sources */,
-				C11875A22670B75F00CE1EDD /* QrReaderViewModel.swift in Sources */,
 				C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */,
-				C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */,
 				C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */,
 				C1CBC8D028882BB100544E8C /* CompleteListViewController.swift in Sources */,
 				C138F56E2670F79B0039C911 /* UIApplication+Volt.swift in Sources */,

@@ -101,6 +101,37 @@
             </objects>
             <point key="canvasLocation" x="936" y="119"/>
         </scene>
+        <!--QR code reader-->
+        <scene sceneID="bxz-ni-cAK">
+            <objects>
+                <viewController storyboardIdentifier="QrCodeViewController" id="wNM-Df-qGB" customClass="QrCodeViewController" customModule="NEXT_Beacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roz-0A-QNV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGF-jr-T1Z">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lhf-j0-Yze"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TGF-jr-T1Z" firstAttribute="top" secondItem="lhf-j0-Yze" secondAttribute="top" constant="20" id="9Zx-tW-lrg"/>
+                            <constraint firstItem="TGF-jr-T1Z" firstAttribute="leading" secondItem="lhf-j0-Yze" secondAttribute="leading" constant="20" id="EEY-Ny-kab"/>
+                            <constraint firstItem="lhf-j0-Yze" firstAttribute="trailing" secondItem="TGF-jr-T1Z" secondAttribute="trailing" constant="20" id="Wol-gP-ceh"/>
+                            <constraint firstItem="lhf-j0-Yze" firstAttribute="bottom" secondItem="TGF-jr-T1Z" secondAttribute="bottom" constant="20" id="krg-jU-79c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR code reader" id="pNK-jR-rKs"/>
+                    <connections>
+                        <outlet property="videoPreview" destination="TGF-jr-T1Z" id="cSF-nb-A4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opG-ei-W0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="-557"/>
+        </scene>
         <!--CompleteListViewController-->
         <scene sceneID="aoH-tN-FHs">
             <objects>
@@ -182,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEj-SZ-v5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="119"/>
+            <point key="canvasLocation" x="1786" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Yc-e4-JG4">
@@ -216,6 +247,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
