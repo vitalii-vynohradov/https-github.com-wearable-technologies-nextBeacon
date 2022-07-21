@@ -5,7 +5,7 @@
 //  Created by Mykyta Smaha on 05.07.2021.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct PPEView: View {
     @ObservedObject var model: PPEViewModel = PPEViewModel()
@@ -96,4 +96,4 @@ struct PPEView_Previews: PreviewProvider {
     static var previews: some View {
         PPEView(model: PPEViewModel())
     }
-}
+}*/

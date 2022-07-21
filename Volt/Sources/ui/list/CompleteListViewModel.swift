@@ -15,6 +15,11 @@ struct EquipmentDataHolder: Codable, Hashable {
     var available: Bool
 }
 
+protocol CompleteListViewModelDelegate: NSObject {
+    func onUpdateScan(isScanning: Bool)
+    func onUpdateEquipment()
+}
+
 final class CompleteListViewModel: ObservableObject {
     private var equipmentTypesRepository = EquipmentTypeRepository.defaultValue
     private var equipmentRepository = EquipmentRepository.defaultValue
@@ -22,9 +27,8 @@ final class CompleteListViewModel: ObservableObject {
     @Published var allEquipment: [EquipmentDataHolder] = []
     @Published var isScanning = false
 
-    @Published var showAlertError = false
-    @Published var alertErrorMsg = ""
-    
+    weak var delegate: CompleteListViewModelDelegate?
+
     private var foundEquipment: Set<BleDevice> = []
 
     private var subscriptions = Set<AnyCancellable>()
@@ -41,6 +45,16 @@ final class CompleteListViewModel: ObservableObject {
                     .sorted { $0.name < $1.name }
                 }
             .store(in: &subscriptions)
+
+        $isScanning
+            .sink { [weak self] scan in
+                self?.delegate?.onUpdateScan(isScanning: scan)
+            }
+            .store(in: &subscriptions)
+
+        $allEquipment
+            .sink { [weak self] _ in self?.delegate?.onUpdateEquipment() }
+            .store(in: &subscriptions)
     }
 
     func subscribe() {
@@ -51,10 +65,6 @@ final class CompleteListViewModel: ObservableObject {
     func unsubscribe() {
         subscriptions.removeAll()
         BleManager.defaultValue.removeDelegate(delegate: self)
-    }
-
-    func load() {
-//        equipmentTypesRepository.load(forceFetch: true)
     }
 
     func check() {

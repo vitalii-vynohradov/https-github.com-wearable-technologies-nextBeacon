@@ -13,4 +13,10 @@ class CompleteListViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var statusImageView: UIImageView!
+
+    func update(_ equipment: EquipmentDataHolder) {
+        nameLabel.text = equipment.name
+        statusImageView.image = equipment.available ? UIImage(systemName: "checkmark") : UIImage(systemName: "xmark")
+        statusImageView.tintColor = equipment.available ? .green : .red
+    }
 }

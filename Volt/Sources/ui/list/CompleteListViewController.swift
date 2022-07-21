@@ -8,26 +8,25 @@
 import Foundation
 import UIKit
 
-class CompleteListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CompleteListViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
-
-    private var model: CompleteListViewModel = CompleteListViewModel()
+    @IBOutlet weak var checkButton: UIButton!
     
+    private var model: CompleteListViewModel = CompleteListViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.table.delegate = self
-        self.table.dataSource = self
+        table.delegate = self
+        table.dataSource = self
+
+        model.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         model.subscribe()
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            self.table.reloadData()
-        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,6 +34,18 @@ class CompleteListViewController: UIViewController, UITableViewDelegate, UITable
         model.unsubscribe()
     }
 
+    @IBAction func onCheck(_ sender: Any) {
+        model.check()
+    }
+}
+
+extension CompleteListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        table.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension CompleteListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.allEquipment.count
     }
@@ -47,21 +58,20 @@ class CompleteListViewController: UIViewController, UITableViewDelegate, UITable
         let cell = table.dequeueReusableCell(withIdentifier: CompleteListViewCell.ID, for: indexPath)
 
         if let listCell = cell as? CompleteListViewCell {
-            let device = model.allEquipment[indexPath.row]
-            listCell.nameLabel.text = device.name
-            listCell.statusImageView.image = device.available ? UIImage(systemName: "checkmark") : UIImage(systemName: "xmark")
-            listCell.statusImageView.tintColor = device.available ? .green : .red
+            listCell.update(model.allEquipment[indexPath.row])
             return listCell
         }
 
         return cell
     }
+}
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.table.deselectRow(at: indexPath, animated: true)
+extension CompleteListViewController: CompleteListViewModelDelegate {
+    func onUpdateScan(isScanning: Bool) {
+        checkButton.isEnabled = !isScanning
     }
-    
-    @IBAction func onCheck(_ sender: Any) {
-        model.check()
+
+    func onUpdateEquipment() {
+        table.reloadData()
     }
 }

@@ -28,7 +28,6 @@
 		C10C60942876F00D00D24BD2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60932876F00D00D24BD2 /* AlertView.swift */; };
 		C10C609C2876F3CD00D24BD2 /* LocalDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C10C609A2876F3CD00D24BD2 /* LocalDB.xcdatamodeld */; };
 		C10C609E287719D700D24BD2 /* EnabledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */; };
-		C10C60A1287722AC00D24BD2 /* CompleteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A0287722AC00D24BD2 /* CompleteListView.swift */; };
 		C10C60A3287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */; };
 		C10C60A52877261C00D24BD2 /* CompleteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */; };
 		C11873B8279054840068B4B0 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11873B7279054840068B4B0 /* MulticastDelegate.swift */; };
@@ -91,7 +90,6 @@
 		C10C60932876F00D00D24BD2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C10C609B2876F3CD00D24BD2 /* LocalDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDB.xcdatamodel; sourceTree = "<group>"; };
 		C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledButtonStyle.swift; sourceTree = "<group>"; };
-		C10C60A0287722AC00D24BD2 /* CompleteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListView.swift; sourceTree = "<group>"; };
 		C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationLinkViewModifier.swift; sourceTree = "<group>"; };
 		C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteListViewModel.swift; sourceTree = "<group>"; };
 		C11873B7279054840068B4B0 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
@@ -338,13 +336,13 @@
 		C10C608A2876ED9900D24BD2 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				C10C60932876F00D00D24BD2 /* AlertView.swift */,
+				C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */,
+				C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */,
 				C10C608B2876EDC700D24BD2 /* HeaderView.swift */,
 				C10C608D2876EDF700D24BD2 /* LoadButtonViewModifier.swift */,
-				C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */,
 				C10C60912876EE6A00D24BD2 /* SmallButtonViewModifier.swift */,
-				C10C60932876F00D00D24BD2 /* AlertView.swift */,
-				C10C609D287719D700D24BD2 /* EnabledButtonStyle.swift */,
-				C10C60A2287723C600D24BD2 /* DefaultNavigationLinkViewModifier.swift */,
+				C10C608F2876EE4300D24BD2 /* SmallTextViewModifier.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -352,7 +350,6 @@
 		C10C609F2877228800D24BD2 /* list */ = {
 			isa = PBXGroup;
 			children = (
-				C10C60A0287722AC00D24BD2 /* CompleteListView.swift */,
 				C1CBC8D328884AA000544E8C /* CompleteListViewCell.swift */,
 				C1CBC8CF28882BB100544E8C /* CompleteListViewController.swift */,
 				C10C60A42877261C00D24BD2 /* CompleteListViewModel.swift */,
@@ -544,7 +541,6 @@
 				C11875A02670B2E700CE1EDD /* QrReaderService.swift in Sources */,
 				C11875A62670BC8400CE1EDD /* QrReaderView.swift in Sources */,
 				C11875A22670B75F00CE1EDD /* QrReaderViewModel.swift in Sources */,
-				C10C60A1287722AC00D24BD2 /* CompleteListView.swift in Sources */,
 				C1D70417266A0DAB007CD802 /* RepositoryError.swift in Sources */,
 				C10C60902876EE4300D24BD2 /* SmallTextViewModifier.swift in Sources */,
 				C1038FE32668FE1900BA19D7 /* String+Volt.swift in Sources */,

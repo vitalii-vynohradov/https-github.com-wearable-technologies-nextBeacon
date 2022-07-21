@@ -175,6 +175,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Complete list" id="bV5-8a-j88"/>
                     <connections>
+                        <outlet property="checkButton" destination="iVv-Cl-Qqj" id="Vgc-Ym-BEl"/>
                         <outlet property="table" destination="wZ2-0O-Bsx" id="fH8-M5-FgH"/>
                     </connections>
                 </viewController>
